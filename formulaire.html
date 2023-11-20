@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Contact</title>
+</head>
+
+
+<body>
+
+
+    <header>
+        <!--logo-->  
+            <div class="logo">
+                <div class="box"><img src="img/jarditou_logo.jpg" width="250px" height="auto" alt="Logo" title="Logo"></div>
+                <div class="box"><h1>Tout le jardin</h1></div>
+            </div>
+        </header>
+    
+    <!--liens-->
+        <nav class="menu">
+            <a class="menu" href="Accueil.html">Accueil</a>
+            <a class="menu" href="tableau.html">Tableau</a>
+            <a class="menu" href="Formulaires.html">Contact</a>
+        </nav>
+    
+    
+        <a href="#"><img src="img/promotion.jpg" width="100%" alt="Logo" title="Logo"></a>
+    
+        </header>
+    <h1>Contact</h1>  
+<p>*Ces zones sont obligatoires</p>
+
+<!--partie 1--> 
+
+     <form action="http://bienvu.net/script.php" method="get"> 
+        <form action="formul.php" method="post" >
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+
+                <label for="nom">Votre nom *:</label><input type="text" name="nom" id="n">
+
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <strong>* Ces zones sont obligatoires !</strong>
+                </div><br>
+
+
+                <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="p">
+                <div class="alert alert-danger alert-dismissible fade show" id="p" role="alert" style="display:none;">
+                    <strong>* Ces zones sont obligatoires !</strong>
+
+                </div><br>
+                <br>
+                <label for="sexe">Sexe*:</label><input type="radio" name="genre" id="femme" value="femme">Féminin
+                <input type="radio" name="genre" value="homme" id="homme">Masculin
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" id="g" style="display:none;">
+                    <strong>* Ces zones sont obligatoires !</strong>
+
+                </div><br>
+                <br>
+                <label for="date">Date de naissance*:</label><input type="date" id="date">
+                <div class="alert alert-danger alert-dismissible fade show"role="alert" id="d" style="display:none;">
+                    <strong>* Ces zones sont obligatoires !</strong>
+
+                </div><br>
+                <label for="cp">Code postal*:</label><input type="text" name="cp" id="cp">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" id="cp" style="display:none;">
+                    <strong>E* Ces zones sont obligatoires !</strong>
+
+                </div><br>
+                <br>
+                <label for="adresse">Adresse:</label><input type="text" name="adresse" id="adresse">
+               <br>
+                <br>
+                <label for="ville">Ville:</label><input type="text" name="ville" id="v">
+               <br>
+               <label for="email">Email*:</label><input type="email" name="email" id="email" size="30" maxlength="30">
+                <div class="alert alert-danger alert-dismissible fade show" id="em" role="alert"  style="display:none;">
+                    <strong>* Ces zones sont obligatoires !</strong>
+
+                </div><br>
+                <br>
+            </fieldset>  
+
+<!--partie 2-->
+            <fieldset>
+                <legend>Votre demande</legend>
+                <label for="sujet">Sujet*:</label>
+                <select id="sujet" size="1">
+                    <option value="rien">Veuillez séléctionner un sujet</option>
+                    <option value="mes commandes">Mes commandes</option>
+                    <option value="question sur un produit">Question sur un produit</option>
+                    <option value="réclamation">Réclamation</option>
+                    <option value="autre">Autre</option>
+                </select><div class="alert alert-danger alert-dismissible fade show" id="s" role="alert"  style="display:none;">
+                    <strong>* Ces zones sont obligatoires !</strong></div><br>
+
+                <label for="question">Votre question*:</label><textarea name="question" id="question" rows="2"
+                    cols="22"></textarea><div class="alert alert-danger alert-dismissible fade show" id="q"role="alert"  style="display:none;">
+                        <strong>* Ces zones sont obligatoires ! </strong></div></span>
+            </fieldset>
+            <input type="radio" id="ok">*J'accepte le traitement informatique de ce formulaire
+            <div class="alert alert-danger alert-dismissible fade show" id="o"role="alert"  style="display:none;">
+                <strong>* Ces zones sont obligatoires ! </strong></div><br>
+
+                <label class="form-group"><button type="button" class="btn btn-outline-warning"  id="myBtn">Envoyer</button></label> 
+                <label class="form-group"><button type="button" class="btn btn-outline-warning"  id="myBtn1">Annuler</button></label>
+        </form>
+
+
+<nav class="menu">
+    <ul>
+    <li><a href="mention.html">Mention légales</a></li>
+    <li><a href="assets/horaires.html">Horaires</a></li>
+    <li><a href="assets/plan.html">Plan du site</a></li>
+    </ul>
+    </nav>
+
+
+    <footer>
+        <!--bas-->
+        <div class="bas">
+            <a class="bas" href="mention.html">Mention légales</a>
+            <a class="bas" href="assets/horaires.html">Horaires</a>
+            <a class="bas" href="assets/plan.html">Plan du site</a>
+        </div>
+        </footer>     
+
+      
+      <!--!!-->
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+       
+        <script src="app.js"></script>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</body>
+</html>
