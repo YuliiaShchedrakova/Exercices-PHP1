@@ -55,7 +55,7 @@ if($mail){
     try{
         $mail->send();
         echo 'Email envoyé ';}
-        catch(exception $e){
+        catch(Exception $ex){
             echo"L'erreur est suivante  : ", $mail->ErrorInfo;
         }
 }
